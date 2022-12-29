@@ -1,0 +1,48 @@
+.titol {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    }
+.titol_llistats {
+    font-size: 1.5rem;
+    color: rgb(19, 19, 23);
+    font-weight: bold;
+    }
+
+.logo {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ddd;
+    float: left;
+
+    }
+
+.menu {
+    background-color: rgb(64, 62, 62);
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    word-spacing: 15px;
+
+
+
+    }
+
+.menu a:link,a:visited {
+    color: white;
+    text-decoration: none;
+ 
+    }
+
+
+.contacte {
+    
+    margin-right: auto;
+    margin-left: 50%;
+    text-align: Left;
+    }
+
+
+

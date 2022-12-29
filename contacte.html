@@ -4,33 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contacte</title>
 </head>
 <body>
-
-    <header>
-        <img src="assets/img/logo.jpg">
-        <UL>
-            <LI><a href="index.html">Inici</a></LI>
-            <LI><a href="cv.html">CV</a></LI>
-            <LI><a href="contacte.html">Contacte</a></LI>
-        </UL>
-    </header>
-    <section>
-        <h2>Contacte</h2>
-        <img src="assets\img\180-367x267.jpg">
-        <h3>Parlem!</h3>
-    </section>
+<section>
+    <img class="logo" src="assets/img/logo.jpg">
+        <p class="menu"><a href="index.html">Inici </a>
+<a href="cv.html"> CV </a>
+<a href="contacte.html"> Contacte </a></p>  
+</section>
+<section class="contacte">
     <form>
-        <label for="nom">Nom</label>
-        <input type="text" name="nom" id="nom" placeholder="Escriu el teu nom">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Escriu el teu correu">
-        <label for="comentaris">Comentaris</label>
-        <textarea name="comentaris" id="comentaris" cols="30" rows="10"></textarea>
-        <input type="submit" value="Enviar">
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label for="checkbox">Accepto la <a href="javascript:void(window.open('privacitat.html','Politica de privacitat','width=400,height=500'))">política de privacitat</a></label>
+        <p><label for="nom">Nom</label></p>
+        <p><input type="text" name="nom" id="nom" placeholder="Escriu el teu nom"></p>
+        <p><label for="email">Email</label></p>
+        <p><input type="email" name="email" id="email" placeholder="Escriu el teu correu">    </p>
+        <p><label for="comentaris">Comentaris</label></p>
+        <p><textarea name="comentaris" id="comentaris" cols="30" rows="10"></textarea>    </p>
+        <p><input type="submit" value="Enviar"></p>
+        <p><input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox">Accepto la <a href="javascript:void(window.open('privacitat.html','Politica de privacitat','width=400,height=500'))">política de privacitat</a></label></p>
+
     </form>
+
+</section>
 </body>
 </html>
