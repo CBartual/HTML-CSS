@@ -1,3 +1,8 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
 .titol {
     font-size: 2rem;
     color: rgb(0, 0, 0);
@@ -8,11 +13,12 @@
     font-weight: bold;
     }
 
-.logo {
+.logo2 {
     width: 100px;
     height: 50px;
     border: 1px solid #ddd;
-    float: left;
+    float: inline-start;
+    align-self: flex-start;
 
     }
 
@@ -25,9 +31,6 @@
     text-decoration: none;
     padding: 1rem;
     word-spacing: 15px;
-
-
-
     }
 
 .menu a:link,a:visited {
@@ -39,10 +42,348 @@
 
 .contacte {
     
-    margin-right: auto;
-    margin-left: 50%;
-    text-align: Left;
+
+    }
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 48px;
+    gap: 48px;  
+    position: relative;
+    margin-top: -5px;
+    left: 0px;
+    background-image: url("assets/img/553-1400x300.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+
+
+}
+
+
+nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+        
+        position: absolute;
+        width: 163px;
+        height: 20px;
+        left: 87%;
+        top: 21px;
+        background-color: #0a0a0a;
+    }
+.logo {
+    position: absolute;
+    left: 1.67%;
+    right: 95.56%;
+    top: 0.47%;
+    bottom: 98.4%; 
+    background-color: #0a0a0a;
+
+
+    }
+nav a {        
+width: 34px;
+height: 20px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+
+/* identical to box height */
+display: flex;
+align-items: flex-end;
+text-align: center;
+
+color: #FFFFFF;
+text-decoration: none;
     }
 
+.row {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+section {
+    padding: 1rem;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    
+
+    }
+
+.Frame1 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 0px;
+
+    position: relative;
+}
+
+.Frame1 h2 {
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;  
+    color: #000000;
+    
+}
+
+.Frame1 .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 99px;
+    
+}
+
+.Frame1 .container .item {
 
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    
+}
+
+.Frame1 .container .item img {
+    margin-bottom: 40px;
+    margin-right: 48px;
+}
+
+.Frame2 .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 99px;
+    
+}
+
+.Frame2 .container .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    
+}
+
+.Frame3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 48px;
+    position: relative;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 40px;
+
+}
+
+.Frame3 .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 99px;
+    background-color: #000000;
+
+    
+}
+
+.Frame3 .container .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+position: relative;
+
+}
+
+.Frame3 .container p {
+    display : flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-left: 115px;
+    text-align: left;
+    position: absolute;
+    align-self: center;
+    justify-content: space-between;
+
+
+
+}
+.card {
+    box-sizing: border-box;
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px 0px 24px;
+gap: 24px;
+
+position: relative;
+width: 340px;
+height: 451.97px;
+
+border: 1px solid #000000;
+border-radius: 20px 20px 20px 20px;
+
+}
+
+.card p {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.card-body {
+width: 100%;
+height: 200px;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 0px 0px;
+overflow: hidden;
+border-radius: 20px 20px 0 0;
+
+}
+
+.Frame2 button {
+    width: 200px;
+    height: 100px;
+    background: #222222;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    
+
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+        background-color: rgb(64, 62, 62);
+        color: white;
+        padding: 1rem;
+
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 99px;
+        background-color: rgb(64, 62, 62);
+        color: white;
+        padding: 1rem;
+    
+    }
+footer img {
+    display: flex;
+
+
+    
+    }
+
+    rect {
+        fill: #0a0a0a;
+
+
+    }
+
+    .Frame4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 48px;
+        position: relative;
+        color: #000000;
+        padding: 40px;
+    
+    }
+
+    .Frame4 .container {
+        display: flex;
+        flex-direction: col;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 99px;
+
+    
+        
+    }
+    
+    .Frame4 .container .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        gap: 16px;
+        width: 220px;
+
+    position: relative;
+    background-color: #D9D9D9;
+    color: #000000;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    height: 43px;
+    
+    }

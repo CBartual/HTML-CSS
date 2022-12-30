@@ -8,26 +8,48 @@
     <title>Contacte</title>
 </head>
 <body>
-<section>
-    <img class="logo" src="assets/img/logo.jpg">
-        <p class="menu"><a href="index.html">Inici </a>
-<a href="cv.html"> CV </a>
-<a href="contacte.html"> Contacte </a></p>  
-</section>
-<section class="contacte">
-    <form>
-        <p><label for="nom">Nom</label></p>
-        <p><input type="text" name="nom" id="nom" placeholder="Escriu el teu nom"></p>
-        <p><label for="email">Email</label></p>
-        <p><input type="email" name="email" id="email" placeholder="Escriu el teu correu">    </p>
-        <p><label for="comentaris">Comentaris</label></p>
-        <p><textarea name="comentaris" id="comentaris" cols="30" rows="10"></textarea>    </p>
-        <p><input type="submit" value="Enviar"></p>
-        <p><input type="checkbox" name="checkbox" id="checkbox">
-        <label for="checkbox">Accepto la <a href="javascript:void(window.open('privacitat.html','Politica de privacitat','width=400,height=500'))">política de privacitat</a></label></p>
+    <svg width="100%" height="64px">
+        <rect x="0" y="0" width="100%" height="100%"></rect>
+    </svg>
+    <img class="logo" src="assets/img/outline_home_white_24dp.png">
+    <nav>
+        <a href="index.html">Inici </a>
+            <a href="cv.html"> CV </a>
+            <a href="contacte.html"> Contacte </a>
+    </nav>
+<div class="row">
+    <section class="contacte">
+     <form>
+           <p><label for="nom">Nom</label></p>
+         <input type="text" name="nom" id="nom" placeholder="Escriu el teu nom">
+         <p><label for="email">Email</label></p>
+         <input type="email" name="email" id="email" placeholder="Escriu el teu correu">
+         <p><label for="comentaris">Comentaris</label></p>
+          <textarea name="comentaris" id="comentaris" cols="30" rows="10"></textarea>
+         <p><input type="submit" value="Enviar"></p>
+         <p><input type="checkbox" name="checkbox" id="checkbox">
+         <label for="checkbox">Accepto la <a href="javascript:void(window.open('privacitat.html','Politica de privacitat','width=400,height=500'))">política de privacitat</a></label></p>
 
-    </form>
+     </form>
 
-</section>
+    </section>
+</div>
+<footer>
+    <div class="container">
+        <div class="item">
+            <img src="assets/img/Twitter.png">
+        </div>
+
+        <div class="item">
+            <img src="assets/img/Linkedin.png">
+        </div>
+
+        <div class="item">
+            <img src="assets/img/Instagram.png">
+
+        </div>
+    </div>
+
+</footer>
 </body>
 </html>
