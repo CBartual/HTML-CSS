@@ -1,28 +1,89 @@
-body {
-    margin: 0px;
-    padding: 0px;
-}
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
 
-.titol {
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+  }
+
+  .demo {
+    margin: 0 auto;
+    padding-top: 64px;
+    width: 94%;
+    height: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    box-sizing: inherit;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 6.74rem;
+  }
+
+  main {
+    margin: 0 auto;
+    padding-top: 32px;
+  }
+
+
+  .col-12 {
+    width: 100%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  .contacte {
+
+    height: auto;
+
+  }
+
+
+
+  .titol {
     font-size: 2rem;
     color: rgb(0, 0, 0);
-    }
-.titol_llistats {
+  }
+
+  .titol_llistats {
     font-size: 1.5rem;
     color: rgb(19, 19, 23);
     font-weight: bold;
-    }
+  }
 
-.logo2 {
+  .logo2 {
     width: 100px;
     height: 50px;
     border: 1px solid #ddd;
     float: inline-start;
     align-self: flex-start;
 
-    }
+  }
 
-.menu {
+  .menu {
     background-color: rgb(64, 62, 62);
     margin-right: 0;
     margin-left: auto;
@@ -31,25 +92,21 @@ body {
     text-decoration: none;
     padding: 1rem;
     word-spacing: 15px;
-    }
+  }
 
-.menu a:link,a:visited {
+  .menu a:link,
+  a:visited {
     color: white;
     text-decoration: none;
- 
-    }
 
+  }
 
-.contacte {
-    
-
-    }
-header {
+  header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 64px 48px;
-    gap: 48px;  
+    gap: 48px;
     position: relative;
     margin-top: -5px;
     left: 0px;
@@ -60,70 +117,62 @@ header {
     color: #FFFFFF;
 
 
-}
+  }
 
 
-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        gap: 16px;
-        
-        position: absolute;
-        width: 163px;
-        height: 20px;
-        left: 87%;
-        top: 21px;
-        background-color: #0a0a0a;
-    }
-.logo {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    float: left;
+    background-color: #0a0a0a;
+    word-spacing: 20px;
+    right: 95%;
+    gap: 10px;
+  }
+
+  .logo {
     position: absolute;
     left: 1.67%;
     right: 95.56%;
-    top: 0.47%;
-    bottom: 98.4%; 
+    top: 1%;
+    bottom: 98.4%;
     background-color: #0a0a0a;
 
 
-    }
-nav a {        
-width: 34px;
-height: 20px;
 
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
+  }
 
-/* identical to box height */
-display: flex;
-align-items: flex-end;
-text-align: center;
+  nav a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 
-color: #FFFFFF;
-text-decoration: none;
-    }
+    color: #FFFFFF;
+    text-decoration: none;
+  }
 
-.row {
+  .row {
 
     display: flex;
     flex-wrap: wrap;
 
-}
+  }
 
-section {
+  section {
     padding: 1rem;
     margin: 0 auto;
     position: relative;
     text-align: center;
-    
 
-    }
 
-.Frame1 {
+  }
+
+  .Frame1 {
     display: flex;
     flex-direction: column;
 
@@ -131,30 +180,30 @@ section {
     padding: 0px;
 
     position: relative;
-}
+  }
 
-.Frame1 h2 {
-    
+  .Frame1 h2 {
+
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
-    line-height: 39px;  
+    line-height: 39px;
     color: #000000;
-    
-}
 
-.Frame1 .container {
+  }
+
+  .Frame1 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0px;
     gap: 99px;
-    
-}
 
-.Frame1 .container .item {
+  }
+
+  .Frame1 .container .item {
 
 
     display: flex;
@@ -163,35 +212,77 @@ section {
     align-items: center;
     padding: 0px;
     gap: 16px;
-    
-}
 
-.Frame1 .container .item img {
-    margin-bottom: 40px;
-    margin-right: 48px;
-}
+  }
 
-.Frame2 .container {
+  .flex-container {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+  }
+
+  .flex-item {
+    padding: 5px;
+    margin-top: 10px;
+    line-height: 10px;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    row-gap: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 354px;
+  }
+
+  .flex-item-aficions {
+    padding: 5px;
+    margin-top: 10px;
+    line-height: 10px;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    row-gap: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 354px;
+    background-color: #D9D9D9;
+    color: #000000;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+
+  }
+
+  .flex-footer {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px;
-    gap: 99px;
-    
-}
+    background-color: rgb(64, 62, 62);
+    color: white;
+    padding: 1rem;
+  }
 
-.Frame2 .container .item {
+
+
+  .container .item {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0px;
     gap: 16px;
-    
-}
+    row-gap: 10px;
 
-.Frame3 {
+  }
+
+  .Frame3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,9 +293,9 @@ section {
     color: #FFFFFF;
     padding: 40px;
 
-}
+  }
 
-.Frame3 .container {
+  .Frame3 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -213,22 +304,22 @@ section {
     gap: 99px;
     background-color: #000000;
 
-    
-}
 
-.Frame3 .container .item {
+  }
+
+  .Frame3 .container .item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0px;
     gap: 16px;
-position: relative;
+    position: relative;
 
-}
+  }
 
-.Frame3 .container p {
-    display : flex;
+  .Frame3 .container p {
+    display: flex;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -245,25 +336,29 @@ position: relative;
 
 
 
-}
-.card {
+  }
+
+  .card {
     box-sizing: border-box;
     display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px 0px 24px;
-gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 24px;
+    gap: 24px;
 
-position: relative;
-width: 340px;
-height: 451.97px;
+    position: relative;
+    width: 340px;
+    height: 451.97px;
 
-border: 1px solid #000000;
-border-radius: 20px 20px 20px 20px;
+    border: 1px solid #000000;
+    border-radius: 20px 20px 20px 20px;
+    width: 100%;
+    height: auto;
+    max-width: 354px;
 
-}
+  }
 
-.card p {
+  .card p {
     display: flex;
     font-family: 'Inter';
     font-style: normal;
@@ -275,22 +370,24 @@ border-radius: 20px 20px 20px 20px;
     margin-top: 10px;
     margin-left: 20px;
     text-align: left;
-}
+  }
 
-.card-body {
-width: 100%;
-height: 200px;
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-margin: 0px 0px;
-overflow: hidden;
-border-radius: 20px 20px 0 0;
+  .card-body {
+    width: 100%;
+    height: 200px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    max-width: 354px;
 
-}
+  }
 
-.Frame2 button {
+  .Frame2 button {
     width: 200px;
     height: 100px;
     background: #222222;
@@ -303,77 +400,63 @@ border-radius: 20px 20px 0 0;
     line-height: 20px;
     text-align: center;
     color: #ffffff;
-    
+  }
 
+  footer {
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(64, 62, 62);
+    color: white;
+    padding: 1rem;
+  }
 
-}
+  footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 99px;
+    background-color: rgb(64, 62, 62);
+    color: white;
+    padding: 1rem;
 
-footer {
+  }
+
+  .Frame4 {
     display: flex;
     flex-direction: column;
-        background-color: rgb(64, 62, 62);
-        color: white;
-        padding: 1rem;
+    align-items: center;
+    padding: 0px;
+    gap: 48px;
+    position: relative;
+    color: #000000;
+    padding: 40px;
 
-    }
+  }
 
-    footer .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        gap: 99px;
-        background-color: rgb(64, 62, 62);
-        color: white;
-        padding: 1rem;
-    
-    }
-footer img {
+  .Frame4 .container {
     display: flex;
+    flex-direction: col;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 99px;
 
 
-    
-    }
 
-    rect {
-        fill: #0a0a0a;
+  }
 
-
-    }
-
-    .Frame4 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-        gap: 48px;
-        position: relative;
-        color: #000000;
-        padding: 40px;
-    
-    }
-
-    .Frame4 .container {
-        display: flex;
-        flex-direction: col;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px;
-        gap: 99px;
-
-    
-        
-    }
-    
-    .Frame4 .container .item {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        gap: 16px;
-        width: 220px;
+  .Frame4 .container .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 16px;
+    width: 220px;
 
     position: relative;
     background-color: #D9D9D9;
@@ -385,5 +468,5 @@ footer img {
     font-size: 20px;
     line-height: 29px;
     height: 43px;
-    
-    }
+
+  }
