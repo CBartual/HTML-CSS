@@ -3,47 +3,19 @@ function suma() {
     resultado = resultado + "A. La suma de los números es : " + suma + "\n\n";
   }
 
-  function prime() {
+  function prime(n) {
 
-    if (sonIguales == true) {
-      var prime1 = true;
-      for (var i = 2; i < num1; i++) {
-        if (num1 % i == 0) {
-          prime1 = false;
+      if (n <= 1) return false;
+      if (n <= 3) return true;
+      if (n % 2 == 0 || n % 3 == 0) return false;
+
+      for (let i = 5; i * i <= n; i = i + 6) {
+        if (n % i == 0 || n % (i + 2) == 0) {
+          return false;
         }
-      }
-      if (prime1 == true) {
-        resultado = resultado + "B. El número : (" + num1 + ") es primo " + "\n\n";
-      } else {
-        resultado = resultado + "B. El número : (" + num1 + ") no es primo " + "\n\n";
-      }
-
-
-    } else {
-
-      var prime1 = true;
-      var prime2 = true;
-      for (var i = 2; i < num1; i++) {
-        if (num1 % i == 0) {
-          prime1 = false;
-        }
-      }
-      for (var i = 2; i < num2; i++) {
-        if (num2 % i == 0) {
-          prime2 = false;
-        }
-      }
-      if (prime1 == true) {
-        resultado = resultado + "B. El primer número : (" + num1 + ") es primo, ";
-      } else {
-        resultado = resultado + "B. El primer número : (" + num1 + ") no es primo, ";
-      }
-      if (prime2 == true) {
-        resultado = resultado + "el segundo número : (" + num2 + ") es primo " + "\n\n";
-      } else {
-        resultado = resultado + "el segundo número : (" + num2 + ") no es primo " + "\n\n";
-      }
-    }
+      } 
+      return true;
+    
   }
 
   function parImpar() {
@@ -67,7 +39,6 @@ function suma() {
       }
     }
   }
-
 
   function rango() {
     var resultado2 = "";
@@ -94,7 +65,6 @@ function suma() {
       }
 
       resultado = resultado + "E. Los números impares entre " + num1 + " y " + num2 + " de forma descendente son: " + resultado2 + "\n\n";
-      //alert("blablabla impares: " + resultado2 );
     }
 
   }
@@ -102,8 +72,6 @@ function suma() {
 
   let resultado = "";
   let sonIguales = false;
-  //let num1 = prompt("Introduzca un número entre 1 y 50");
-  //let num2 = prompt("Introduzca otro número entre 1 y 50");
   let num1 = parseInt(prompt("Introduzca un número entero entre 1 y 50"), 10);
   let num2 = parseInt(prompt("Introduzca otro número entero entre 1 y 50"), 10);
 
@@ -115,9 +83,33 @@ function suma() {
 
     //Llamada a las funciones
     suma();
-    prime();
+
+    const esPrime = prime(num1);
+    const esPrime2 = prime(num2);
+
+    if (sonIguales)
+    {
+      if (esPrime){
+        resultado = resultado + "B. El número : (" + num1 + ") es primo " + "\n\n";
+      } else {
+        resultado = resultado + "B. El número : (" + num1 + ") no es primo " + "\n\n";
+      }
+    } else {
+
+    if (esPrime){
+      resultado = resultado + "B. El primer número : (" + num1 + ") es primo, ";
+    } else {
+      resultado = resultado + "B. El primer número : (" + num1 + ") no es primo, ";
+    }
+    if (esPrime2){
+      resultado = resultado + "el segundo número : (" + num2 + ") es primo " + "\n\n";
+    } else {
+      resultado = resultado + "el segundo número : (" + num2 + ") no es primo " + "\n\n";
+    }
+  }
     parImpar();
     rango();
+
 
 
     alert(resultado);
