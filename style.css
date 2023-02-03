@@ -44,6 +44,11 @@ html {
     width: 100%;
   }
 
+  /* et falta la classe col-6 */
+  .col-6 {
+    width: 50%;
+  }
+
   [class*="col-"] {
     float: left;
     padding: 15px;
@@ -115,8 +120,10 @@ html {
     background-size: cover;
     background-position: center;
     color: #FFFFFF;
-
-
+    height: 300px; 
+    /* No és bona pràctica donar alçada als elements, 
+      però en cas de l'header es pot fer una excepció per donar-li un efecte banner, 
+      per això et comentava que dins del header van els menus, banner així té mida automàtica. */
   }
 
 
@@ -193,13 +200,14 @@ html {
 
   }
 
-  .Frame1 .container {
+  /* La classe Frame1 no existeix i per l'especificitat de css no s'estan aplicant els estils al contenidor */
+  /* .Frame1 .container { */
+  .container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* flex-direction: row; per defecte és row */
     align-items: center;
     padding: 0px;
-    gap: 99px;
+    gap: 16px; 
 
   }
 
@@ -470,3 +478,25 @@ html {
     height: 43px;
 
   }
+
+/* en aquest mateix css pots maquetar la pàgina de contactes */
+
+/* -------------Contacte------------------*/
+.contacte__title {
+  text-align: center;
+}
+
+.form-group {
+  padding: 8px 0;
+}
+
+.form-label {
+  display: block;
+  padding-bottom: 8px;
+}
+
+.form-input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #dadada;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,49 +8,59 @@
     <link rel="stylesheet" href="style.css">
     <title>Contacte</title>
 </head>
-    <body>
-        <nav class="col-12">
-            <img class="logo" src="assets/img/outline_home_white_24dp.png">
-            <a href="index.html">Inici </a>
-            <a href="cv.html"> CV </a>
-            <a href="contacte.html"> Contacte </a>
-        </nav>
 
-        <div class="demo">
+<body>
+    <nav class="col-12">
+        <img class="logo" src="assets/img/outline_home_white_24dp.png">
+        <a href="index.html">Inici </a>
+        <a href="cv.html"> CV </a>
+        <a href="contacte.html"> Contacte </a>
+    </nav>
+
+    <div class="demo">
+        <h1 class='contacte__title'>CONTACTE</h1>
         <div class="col-12">
             <section>
                 <form>
-                    <p><label for="nom">Nom</label></p>
-                    <input type="text" name="nom" id="nom" placeholder="Escriu el teu nom">
+                    <!-- una estructura bàsica per als formularis és la següent -->
+                    <div class='form-group'>
+                        <label class='form-label' for="nom">Nom</label>
+                        <input class='form-input' type="text" name="nom" id="nom" placeholder="Escriu el teu nom">
+                    </div>
+
                     <p><label for="email">Email</label></p>
                     <input type="email" name="email" id="email" placeholder="Escriu el teu correu">
                     <p><label for="comentaris">Comentaris</label></p>
                     <textarea name="comentaris" id="comentaris" cols="30" rows="10"></textarea>
                     <p><input type="submit" value="Enviar"></p>
                     <p><input type="checkbox" name="checkbox" id="checkbox">
-                    <label for="checkbox">Acepto la <a href="javascript:void(window.open('privacitat.html','Politica de privacitat','width=400,height=500'))">política de privacidad</a></label></p>
+                        <label for="checkbox">Acepto la <a
+                                href="javascript:void(window.open('privacitat.html','Politica de privacitat','width=400,height=500'))">política
+                                de privacidad</a></label>
+                    </p>
 
                 </form>
 
             </section>
         </div>
     </div>
-        <footer class="col-12">
-            <ul class="flex-container">
+    <footer class="col-12">
+        <ul class="flex-container">
 
-                <li class="flex-footer">
-                    <img src="assets/img/Twitter.png">
-                </li>
+            <li class="flex-footer">
+                <img src="assets/img/Twitter.png">
+            </li>
 
-                <li class="flex-footer">
-                    <img src="assets/img/Linkedin.png">
-                </li>
+            <li class="flex-footer">
+                <img src="assets/img/Linkedin.png">
+            </li>
 
-                <li class="flex-footer">
-                    <img src="assets/img/Instagram.png">
-                </li>
+            <li class="flex-footer">
+                <img src="assets/img/Instagram.png">
+            </li>
 
-            </ul>
-        </footer>
-    </body>
+        </ul>
+    </footer>
+</body>
+
 </html>

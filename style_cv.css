@@ -47,13 +47,18 @@ html {
   }
 
   [class*="col-"] {
-    float: left;
+    float: left; /*Amb l'aparició de flex i grid els float ja es van deixar de fer servir fa 5 anys, 
+                    no estan deprecated perquè no trencar projectes antics. */
   }
 
-  .header {
+  .header, .title {
     background-color: black;
     color: white;
-    padding: 5px;
+  }
+
+  .title {
+    margin: 0;
+    padding: 8px;
   }
 
   flex-container {
@@ -108,4 +113,41 @@ html {
 
   h2 {
     text-decoration: underline;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    float: left;
+    background-color: #0a0a0a;
+    word-spacing: 20px;
+    right: 95%;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .logo {
+    position: absolute;
+    left: 1.67%;
+    right: 95.56%;
+    top: 1%;
+    bottom: 98.4%;
+    background-color: #0a0a0a;
+
+
+
+  }
+
+  nav a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+    text-decoration: none;
   }
