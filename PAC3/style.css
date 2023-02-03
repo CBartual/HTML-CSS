@@ -1,0 +1,369 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: inherit;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 6.74rem;
+  padding-top: 2rem;
+}
+
+main {
+  margin: 0 auto;
+  padding-top: 32px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+nav a {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.row {
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.flexbox {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.card-title {
+  font-family: 'Montserrat';
+  font-style: bold;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+}
+
+.flex-item {
+  padding: 5px;
+  margin-top: 10px;
+  line-height: 10px;
+  align-items: center;
+  padding: 30px;
+  gap: 16px;
+  row-gap: 10px;
+  width: 100%;
+  height: auto;
+  max-width: 354px;
+  display: flex;
+
+}
+
+
+.flexbox7 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  padding: 1rem;
+}
+
+
+
+.container .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  row-gap: 10px;
+
+}
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 24px;
+  gap: 24px;
+
+  position: relative;
+  width: 120px;
+  height: 451.97px;
+
+  border: 1px solid #000000;
+  border-radius: 20px 20px 20px 20px;
+  height: 500px;
+  max-width: 354px;
+
+}
+
+.card p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card-body {
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 0px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  max-width: 354px;
+  height: 420px;
+
+
+}
+
+img {
+  margin: 0 auto;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flexbox .flex-item {
+  flex: 1 100%;
+  max-width: 300px;
+  margin: 10px;
+
+  border: 1px solid #000;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.50s linear;
+}
+
+.flexbox .flex-item:hover {
+  transform: scale(1.05);
+}
+
+.flexbox .flex-item img {
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.dark .flexbox .flex-item .card__face {
+  border-color: #fff;
+}
+
+.dark .flexbox .flex-item:hover .card__face {
+  border-color: #000;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.50s linear;
+}
+
+.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu input {
+  display: none;
+}
+
+.menu label {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: all 0.50s linear;
+}
+
+.menu #light:checked~label[for="light"] {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.menu #dark:checked~label[for="dark"] {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.card {
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.50s linear;
+}
+
+.dark .card {
+  background-color: #000;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  border: 5px solid #ffffff;
+
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .card-body .card-back {
+  padding: 10px;
+}
+
+.card .card-body .card-back h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.card .card-body .card-back img {
+  width: 10%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.menu #dark:checked~.card .card-body .card__face {
+  color: #fff;
+  border: 5px solid #ffffff;
+}
+
+.menu #light:checked~.card .card-body .card__face {
+  color: #000;
+}
+
+
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+ 
+  text-align: center;
+  font-weight: bold;
+  font-size: 10px;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: crimson;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.card__face--back {
+  background: slateblue;
+  transform: rotateY(180deg);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.scene {
+  display: inline-block;
+  width: 200px;
+  height: 260px;
+  margin: 40px 0;
+  perspective: 600px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+  border-radius: 20px 20px 20px 20px;
+  border: 5px solid #000000;
+
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.column {
+  float: left;
+  width: 50%;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=ESc, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+      <div class="menu">
+        <input type="radio" name="theme" id="light" checked>
+        <label for="light">Light</label>
+        <input type="radio" name="theme" id="dark">
+        <label for="dark">Dark</label>
+        <p></p>
+        </div>
+    <br>
+    <div id="Pokemons">
+      <div class="flexbox" id="Pokemonflexbox">
+      </div>
+    </div>
+    <div>
+      <br><br>
+		<p> Campo de Filtrado (* es carácter comodín):
+        <input id=filtradobox type="search" value="" oninput="filtrado()"> </p>
+		<form method="get">
+			<label for="pokeId"> Buscar Pokemon con ID:</label>
+			<input id="pokeId" name ="pokeId" type="search" value=""><br><br>
+			<label for="NumPokes"> Cantidad de Pokemon a buscar:</label>
+			<input id="NumPokes" name="NumPokes" type="search" value="10"><br>
+			<input type="submit" value="Enviar" />
+		</form>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+
+</html>
